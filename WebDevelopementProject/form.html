@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="form.css">
+</head>
+<body>
+
+
+  <div class="container">
+    <div class="title">Registration</div>
+    <div class="content">
+      <form name="myForm" action="/action_page.php" onsubmit="return validateForm()" method="post">
+        <div class="user-details">
+          <div class="input-box">
+            <span class="details">First Name</span>
+            <input type="text" placeholder="First Name" name="fname">
+          </div>
+          <div class="input-box">
+            <span class="details">Last Name</span>
+            <input type="text" placeholder="Last Name"  name="flname">
+          </div>
+          <div class="input-box">
+            <span class="details">Email</span>
+            <input type="text" placeholder="Enter your email"  name="email">
+          </div>
+          <div class="input-box">
+            <span class="details">Phone Number</span>
+            <input type="number" placeholder="Enter your number"  name="fphone">
+          </div>
+          <div class="input-box">
+            <span class="details">Choose Movie</span>
+            <select name="" id="">
+                <option value="">Movie</option>
+                <option value="">Movie 1</option>
+                <option value="">Movie 2</option>
+                <option value="">Movie 3</option>
+                <option value="">Movie 4</option>
+                <option value="">Movie 5</option>
+            </select>
+          </div>
+          <div class="input-box">
+            <span class="details">Day</span>
+            <select name="" id="">
+                <option value="">Monday</option>
+                <option value="">Tuesday</option>
+                <option value="">Wednesday</option>
+                <option value="">Thursday</option>
+                <option value="">Friday</option>
+                <option value="">Saturday</option>
+                <option value="">Sunday</option>
+            </select>
+          </div>
+
+          <div class="input-box">
+            <span class="details">Timings</span>
+            <select name="" id="">
+                <option value="">9:45AM</option>
+                <option value="">1:00PM</option>
+                <option value="">4:15PM</option>
+                <option value="">7:30PM</option>
+                <option value="">10:45PM</option>
+            </select>
+          </div>
+          <div class="input-box">
+            <span class="details">No. of Tickets</span>
+            <input type="number" placeholder="Tickets" name="ticket" >
+
+        </div>
+        <div class="City">
+          <input type="radio" name="cities" id="dot-1">
+          <input type="radio" name="cities" id="dot-2">
+          <input type="radio" name="cities" id="dot-3">
+          <span class="City-name">City</span>
+          <div class="category">
+            <label for="dot-1">
+            <span class="dot one"></span>
+            <span class="cities">Chandigarh</span>
+          </label>
+          <label for="dot-2">
+            <span class="dot two"></span>
+            <span class="cities">Mohali</span>
+          </label>
+          <label for="dot-3">
+            <span class="dot three"></span>
+            <span class="cities">Panchkula</span>
+            </label>
+          </div>
+        </div>
+        <div class="button"> 
+          <input type="submit" value="Register">
+        </div>
+      </form>
+    </div>
+  </div>
+
+</body>
+<script>
+    function validateForm() {
+  let x = document.forms["myForm"]["fname"].value;
+  if (x == "") {
+    alert("Entries can't be empty");
+    return false;
+  }
+}
+
+function validateForm() {
+  let x = document.forms["myForm"]["flname"].value;
+  if (x == "") {
+    alert("Entries can't be empty");
+    return false;
+  }
+}
+function validateForm() {
+  let x = document.forms["myForm"]["email"].value;
+  if (x == "") {
+    alert("Entries can't be empty");
+    return false;
+  }
+}
+function validateForm() {
+  let x = document.forms["myForm"]["fphone"].value;
+  if (x == "") {
+    alert("Entries can't be empty");
+    return false;
+  }
+}
+function validateForm() {
+  let x = document.forms["myForm"]["ticket"].value;
+  if (x == "") {
+    alert("Entries can't be empty");
+    return false;
+  }
+}
+function validateForm() {
+  let x = document.forms["myForm"]["cities"].value;
+  if (x == "") {
+    alert("Entries can't be empty");
+    return false;
+  }
+}
+</script>
+
+</html>
