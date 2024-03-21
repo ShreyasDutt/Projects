@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Calculator</title>
+    <style>
+        html,
+    body {
+      font-family: ClearSans;
+      background: linear-gradient(#190019,#2B124C,#522B5B,#854F6C,#DFB6B2,#FBE4D8);
+      background-repeat: no-repeat;
+      background-size: 100vw 100vh;
+    }
+
+        main{
+            position: absolute;
+            left: 34%;
+            top: 20%;
+        }
+        .container {
+            background-color: rgba(0, 0, 0, 0.382);
+            border: 8px solid black;
+            border-radius: 8px;
+            border-style:ridge;
+            min-width: 200px;
+            max-width: 400px;
+            padding-right: 20px;
+            padding-left: 20px;
+            height: 370px;
+        }    
+
+        .solved {
+            margin-top: 5px;
+            height: 50px;
+            margin-bottom: 5px;
+            width: 400px;
+            border: 1px solid black;
+            background-color: rgb(251, 247, 242);
+            font-size: 20px;
+        }
+
+        .buttons {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-template-rows: repeat(4, 1fr); 
+            gap: 5px;  
+        }
+
+        .buttons button {
+            padding: 10px;
+            font-size: 20px;
+        }
+        .Number{
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <div class="container">
+            <div class="solved"></div>
+            <div class="buttons">
+                <button class="Number" onclick="ButtonFunction('1')">1</button>
+                <button class="Number" onclick="ButtonFunction('2')">2</button>
+                <button class="Number" onclick="ButtonFunction('3')">3</button>
+                <button class="Number" onclick="ButtonFunction('4')">4</button>
+                <button class="Number" onclick="ButtonFunction('5')">5</button>
+                <button class="Number" onclick="ButtonFunction('6')">6</button>
+                <button class="Number" onclick="ButtonFunction('7')">7</button>
+                <button class="Number" onclick="ButtonFunction('8')">8</button>
+                <button class="Number" onclick="ButtonFunction('9')">9</button>
+                <button class="Number" onclick="ButtonFunction('+')">+</button>
+                <button class="Number" onclick="ButtonFunction('0')">0</button>
+                <button class="Number" onclick="ButtonFunction('-')">-</button>
+                <button class="Number" onclick="ButtonFunction('*')">*</button>
+                <button class="Number" onclick="ButtonFunction('/')">/</button>
+                <button class="Number" onclick="ButtonFunction('.')">.</button>
+                <button class="Number" onclick="ButtonFunction('Enter')">Enter</button>
+                <button class="Number" onclick="ButtonFunction('Clear')">Clear</button>
+                <button class="Number" onclick="ButtonFunction('ClearAll')">Clear All</button>
+            </div>
+        </div>
+    </main>
+</body>
+<script>
+
+let TextArea = document.getElementsByClassName("solved")[0];
+let a;
+let ClearText ='';
+function ButtonFunction(value) {
+    if (value === 'Enter') {
+        a = TextArea.textContent;
+        let Output = eval(a);
+        TextArea.textContent = Output;
+    } 
+
+    else if (value === 'Clear') {
+        let len = TextArea.textContent.length;
+
+        for (let i = 0; i < len-1; i++) {
+           ClearText += TextArea.textContent[i];
+        }
+
+            TextArea.textContent = ClearText;
+            ClearText ='';
+            
+    }   
+    else if (value === 'ClearAll') {
+        TextArea.textContent ='';
+    }
+    else {
+       TextArea.textContent += value;
+    }
+}
+</script>
+</html>
