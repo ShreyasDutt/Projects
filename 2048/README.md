@@ -8,7 +8,7 @@ About 2048 Game
 
 How to Play
 
-Use the arrow keys or swipe gestures (on touch-enabled devices) to move the tiles in the desired direction.
+Use the arrow keys to move the tiles in the desired direction.
 Tiles with the same number merge into a single tile with a value equal to their sum.
 Continue merging tiles to create larger numbers and reach the elusive 2048 tile.
 The game ends when there are no more legal moves available.
