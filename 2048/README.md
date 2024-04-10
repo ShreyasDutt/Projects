@@ -1,4 +1,5 @@
 2048 Game
+
 Welcome to the 2048 game repository! This project is an implementation of the popular puzzle game 2048 in JavaScript.
 
 About 2048 Game
