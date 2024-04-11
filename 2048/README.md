@@ -4,7 +4,7 @@ Welcome to the 2048 game repository! This project is an implementation of the po
 
 About 2048 Game
 
-2048 is a single-player sliding block puzzle game where the player combines tiles with matching numbers to reach the elusive tile with the number 2048. The game is played on a 4x4 grid, and the player can move tiles in four directions: up, down, left, and right. With each move, a new tile randomly appears on the board with a value of either 2 or 4. The game ends when the player achieves the 2048 tile or when there are no more legal moves.
+2048 is a single-player sliding block puzzle game where the player combines tiles with matching numbers to reach the elusive tile with the number 2048. The game is played on a 4x4 grid, and the player can move tiles in four directions: up, down, left, and right. With each move, a new tile randomly appears on the board with a value of either 2 or 4. The game ends when there are no more legal moves.
 
 How to Play
 
