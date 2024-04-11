@@ -10,6 +10,6 @@ How to Play
 
 Use the arrow keys or WASD keys to move the tiles in the desired direction.
 Tiles with the same number merge into a single tile with a value equal to their sum.
-Continue merging tiles to create larger numbers and reach the elusive 2048 tile.
+Continue merging tiles to create larger numbers.
 The game ends when there are no more legal moves available.
 
