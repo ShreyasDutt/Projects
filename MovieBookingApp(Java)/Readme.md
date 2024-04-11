@@ -17,3 +17,7 @@ Payment Options: Various payment methods are available for users to choose from,
 Verification: Upon successful payment, users are prompted to enter their phone number again for verification purposes, ensuring the security of their booking.
 
 Ticket Details: Finally, the application displays the ticket details, including movie information, cinema location, selected seat numbers, and payment confirmation, providing users with all the necessary information for their movie-going experience.
+
+Collaborative Development:
+
+This project was created in collaboration with my classmates, utilizing the Java programming language and industry-standard practices to ensure the robustness, scalability, and maintainability of the application.
