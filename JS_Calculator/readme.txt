@@ -1,1 +1,0 @@
-This is a simple calculator implemented using HTML, CSS, and JavaScript. Users can perform basic arithmetic operations such as addition, subtraction, multiplication, and division, as well as decimal point input. The calculator provides functionality to clear the last entry, clear all entries, and calculate the result with the 'Enter' button.
