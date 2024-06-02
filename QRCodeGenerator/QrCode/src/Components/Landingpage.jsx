@@ -73,11 +73,11 @@ function Landingpage() {
             setTimeout(() => {
                 window.URL.revokeObjectURL(url);
                 a.href = '';
-                setDownloading(false); 
+                setDownloading(false);
             }, 100);
         } catch (error) {
             console.error("Error downloading QR code:", error);
-            setDownloading(false); 
+            setDownloading(false);
         }
     };
 
@@ -122,10 +122,11 @@ function Landingpage() {
                                 onClick={handleDownloadQR}
                                 className={"w-full h-10 mt-4"}
                                 variant="outlined"
-                                disabled={downloading} 
+                                disabled={downloading}
                             >
-                                <a ref={downloadLinkRef} className="block text-black visited:text-black">Download QR</a>
+                                Download
                             </Button>
+                            <a ref={downloadLinkRef} className="hidden text-black visited:text-black">Download QR</a>
                         </div>
                     )}
                 </div>
