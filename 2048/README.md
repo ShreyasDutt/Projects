@@ -1,4 +1,5 @@
 2048 Game
+https://2048-shreyas.netlify.app/
 
 Welcome to the 2048 game repository! This project is an implementation of the popular puzzle game 2048 in JavaScript.
 
